@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
     <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
+    <title>Restaurant Familliale</title>
 </head>
 
-<body class="bg-[#231810] text-white">
+<body class="bg-[#281D15] text-[#DEC7B6]">
     <nav
-        class="flex justify-between items-center px-20 h-20 fixed top-0 left-0 right-0 bg-[#231810/30] z-10 backdrop-blur-2xl">
+        class="flex justify-between border-b border-[#554234] items-center px-20 h-20 fixed top-0 left-0 right-0 bg-[#281D15/30] z-10 backdrop-blur-2xl">
         <div>
             <h1 class="text-xl">Mon Restaurant</h1>
         </div>
-        <div class="space-x-4">
+        <div class="space-x-4 text-[#FBE3D2]">
             <a href="#about">About</a>
             <a href="#menu">Menu</a>
             <a href="#contact">Contact</a>
@@ -33,7 +33,7 @@
         </header>
     </div>
     <section class="pt-20 w-4/5 mx-auto" id="about">
-        <h1 class="lg:text-3xl text-xl font-semibold lg:pb-20 pb-10 mx-10">About us</h1>
+        <h1 class="lg:text-3xl text-[#FBE3D2] text-xl font-semibold lg:pb-20 pb-10 mx-10">About us</h1>
         <p class="w-4/5 mx-auto lg:text-xl text-md">Depuis plus de 20 ans, notre restaurant familial accueille ses
             clients dans une ambiance conviviale et chaleureuse. Passionnés par la cuisine traditionnelle, nous mettons
             un point d'honneur à préparer des plats faits maison, avec des produits frais et locaux. Ici, tout est pensé
@@ -42,34 +42,42 @@
         </p>
     </section>
     <section class="pt-20 w-4/5 mx-auto" id="menu">
-        <h1 class="lg:text-3xl text-xl font-semibold lg:pb-20 pb-10 mx-10">Menu</h1>
+        <h1 class="lg:text-3xl text-[#FBE3D2] text-xl font-semibold lg:pb-20 pb-10 mx-10">Menu</h1>
 
         <div class="grid grid-cols-2 gap-5 w-2/3 lg:grid-cols-4 md:w-1/2 mx-auto pb-12" id="filtres">
-            <button id="tous" class="bg-[#3a2b20] rounded-full hover:bg-[#4a382b] transition">Tous</button>
-            <button id="poissons" class="bg-[#3a2b20] rounded-full hover:bg-[#4a382b] transition">Poissons</button>
-            <button id="pizzas" class="bg-[#3a2b20] rounded-full  hover:bg-[#4a382b] transition">Pizzas</button>
-            <button id="boissons" class="bg-[#3a2b20] rounded-full hover:bg-[#4a382b] transition">Boissons</button>
+            <button id="tous"
+                class="bg-[#493629] border-2 border-[#675345] bg-[#372518] rounded-full hover:bg-[#3F2D20] transition">Tous</button>
+            <button id="poissons"
+                class="bg-[#372518] border-2 border-[#675345] rounded-full hover:bg-[#3F2D20] transition">Poissons</button>
+            <button id="pizzas"
+                class="bg-[#372518] border-2 border-[#675345] rounded-full  hover:bg-[#3F2D20] transition">Pizzas</button>
+            <button id="boissons"
+                class="bg-[#372518] border-2 border-[#675345] rounded-full hover:bg-[#3F2D20] transition">Boissons</button>
         </div>
 
         <div id="menu-items" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 ">
-            <div class="poissons bg-[#2e2018] shadow-md rounded-xl p-6 hover:shadow-lg transition">
+            <div
+                class="poissons bg-[#2e2018] border-2 border-[#675345] shadow-md rounded-xl p-6 text-[#FBE3D2] hover:bg-[#3F2D20] transition hover:scale-105">
                 <h2 class="text-xl font-semibold mb-2">Dorade grillée</h2>
-                <p class="text-gray-300">À la plancha avec herbes fraîches</p>
+                <p>À la plancha avec herbes fraîches</p>
             </div>
 
-            <div class="boissons bg-[#2e2018] shadow-md rounded-xl p-6 hover:shadow-lg transition">
+            <div
+                class="boissons bg-[#2e2018] border-2 border-[#675345] shadow-md rounded-xl p-6 text-[#FBE3D2] hover:bg-[#3F2D20] transition hover:scale-105">
                 <h2 class="text-xl font-semibold mb-2">Limonade maison</h2>
-                <p class="text-gray-300">Citron pressé, menthe fraîche</p>
+                <p>Citron pressé, menthe fraîche</p>
             </div>
 
-            <div class="poissons bg-[#2e2018] shadow-md rounded-xl p-6 hover:shadow-lg transition">
+            <div
+                class="poissons bg-[#2e2018] border-2 border-[#675345] shadow-md rounded-xl p-6 text-[#FBE3D2] hover:bg-[#3F2D20] transition hover:scale-105">
                 <h2 class="text-xl font-semibold mb-2">Filet de saumon</h2>
-                <p class="text-gray-300">Servi avec du riz et des légumes</p>
+                <p>Servi avec du riz et des légumes</p>
             </div>
 
-            <div class="pizzas bg-[#2e2018] shadow-md rounded-xl p-6 hover:shadow-lg transition">
+            <div
+                class="pizzas bg-[#2e2018] border-2 border-[#675345] shadow-md rounded-xl p-6 text-[#FBE3D2] hover:bg-[#3F2D20] transition hover:scale-105">
                 <h2 class="text-xl font-semibold mb-2">Pizza Reine</h2>
-                <p class="text-gray-300">Jambon, champignons, mozzarella</p>
+                <p>Jambon, champignons, mozzarella</p>
             </div>
         </div>
     </section>
@@ -77,30 +85,69 @@
 
 
     <section class="pt-20 w-4/5 mx-auto">
-        <h1 class="lg:text-3xl text-xl font-semibold lg:pb-20 pb-10 mx-10">Service de livraison</h1>
+        <h1 class="lg:text-3xl text-[#FBE3D2] text-xl font-semibold lg:pb-20 pb-10 mx-10">Service de livraison</h1>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-1/2 mx-auto">
             <a href="">
-                <img src="images/ubereats.png" class="lg:w-full h-full w-1/2 mx-auto" alt="">
+                <img src="images/ubereats.png" class="lg:w-full h-full w-1/2 mx-auto" alt="logo uber eats">
             </a>
             <a href="">
-                <img src="images/deliveroo.png" class="lg:w-full h-full w-1/2 mx-auto" alt="">
+                <img src="images/deliveroo.png" class="lg:w-full h-full w-1/2 mx-auto" alt="logo deliveroo">
             </a>
             <a href="">
-                <img src="images/takeaway.png" class="lg:w-full h-full w-1/2 mx-auto" alt="">
+                <img src="images/takeaway.png" class="lg:w-full h-full w-1/2 mx-auto" alt="logo takeaway">
             </a>
         </div>
     </section>
 
-    <section class="pt-20 w-4/5 mx-auto" id="contact">
-        <h1 class="lg:text-3xl text-xl font-semibold lg:pb-20 pb-10 mx-10">Contact</h1>
+    <section class="pt-20 pb-20 w-4/5 mx-auto text-[#FBE3D2]" id="contact">
+        <h1 class="text-xl lg:text-3xl font-semibold pb-10 lg:pb-20">Contact</h1>
 
-        <p>
-            <i class="bi bi-envelope"></i> : exemple@mail.com
-        </p>
-        <p>
-            <i class="bi bi-phone"></i> : exemple@mail.com
-        </p>
+        <div class="space-y-6 bg-[#231810] p-8 rounded-xl shadow-lg max-w-xl mx-auto">
+            <p class="flex items-center gap-4">
+                <i class="bi bi-envelope-fill text-[#DEC7B6] text-xl"></i>
+                <span>exemple@mail.com</span>
+            </p>
+            <p class="flex items-center gap-4">
+                <i class="bi bi-telephone-fill text-[#DEC7B6] text-xl"></i>
+                <span>+1 234 567 890</span>
+            </p>
+            <p class="flex items-center gap-4">
+                <i class="bi bi-geo-alt-fill text-[#DEC7B6] text-xl"></i>
+                <span>123 rue de la Gastronomie, Bruxelles, Belgique</span>
+            </p>
+        </div>
+
+        <form action="https://formspree.io/f/xpwrvopy" method="POST" class="mt-10 bg-[#231810] p-8 rounded-xl shadow-lg max-w-xl mx-auto space-y-6">
+            <div>
+                <input type="text" name="_gotcha" class="hidden">
+
+                <label for="name" class="block mb-1 text-[#DEC7B6]">Nom</label>
+                <input type="text" id="name" name="name" required
+                    class="w-full p-3 rounded-lg bg-[#372518] text-[#FBE3D2] border border-[#675345] focus:outline-none focus:ring-2 focus:ring-[#7F6A5B]">
+            </div>
+            <div>
+                <label for="email" class="block mb-1 text-[#DEC7B6]">Email</label>
+                <input type="email" id="email" name="email" required
+                    class="w-full p-3 rounded-lg bg-[#372518] text-[#FBE3D2] border border-[#675345] focus:outline-none focus:ring-2 focus:ring-[#7F6A5B]">
+            </div>
+            <div>
+                <label for="message" class="block mb-1 text-[#DEC7B6]">Message</label>
+                <textarea id="message" name="message" rows="4" required
+                    class="w-full p-3 rounded-lg bg-[#372518] text-[#FBE3D2] border border-[#675345] focus:outline-none focus:ring-2 focus:ring-[#7F6A5B]"></textarea>
+            </div>
+            <button type="submit"
+                class="bg-[#372518] hover:bg-[#3F2D20] text-[#FBE3D2] font-semibold py-2 px-6 rounded-full transition">
+                Envoyer
+            </button>
+        </form>
+
     </section>
+
+    <footer class="py-10 text-center border-t border-[#554234] text-[#DEC7B6] text-sm">
+        <p>&copy; 2025 Mon Restaurant. Tous droits réservés.</p>
+        <p class="mt-2">Site réalisé par Heyyy013 <i class="bi bi-heart text-pink-300"></i> </p>
+    </footer>
+
 
 
     <script src="scripts/script.js"></script>

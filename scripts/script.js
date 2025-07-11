@@ -3,7 +3,7 @@ const menuItems = document.querySelectorAll('#menu-items div')
 let categorie = 'tous'
 
 filtres.forEach(filtre => {
-    
+
     filtre.addEventListener('click', () => {
         categorie = filtre.id
         filtres.forEach(item => {
@@ -19,4 +19,11 @@ filtres.forEach(filtre => {
             }
         });
     })
+});
+
+const burgerButton = document.getElementById("burger-button");
+const mobileMenu = document.getElementById("mobile-menu");
+
+burgerButton.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
 });
